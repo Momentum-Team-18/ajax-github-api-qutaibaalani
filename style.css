@@ -1,0 +1,16 @@
+#mainContainer {
+    padding: 100px 0 0 100px;
+    font-size: x-large;
+}
+
+#mainContainer img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.myName {
+    position: absolute;
+    top: 140px;
+    left: 600px;
+}

@@ -24,7 +24,7 @@ fetch(url, {
     // Process the JSON data returned from Github
     .then(data => {
         // Use the data returned from the API
-        console.log(data);
+        console.log("data: ", data);
         // Extract relevant user data from the JSON
         let location = data.location;
         let githubUrl = data.html_url;
@@ -61,7 +61,7 @@ fetch(url, {
     // Process the JSON data returned from Github for the user's repositories
     .then(repos => {
         // Use the repositories returned from the API
-        console.log(repos);
+        console.log("repos: ", repos);
         // Create a string containing HTML markup to display the user's repositories
         let reposList = "<h2>GitHub Repos:</h2><ul>";
         for (let i = 0, len = repos.length; i < len; i++) {

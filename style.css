@@ -1,6 +1,7 @@
 #mainContainer {
-    padding: 100px 0 0 100px;
+    padding: 30px 30px;
     font-size: x-large;
+    background: linear-gradient(to bottom, #fff 10%, #f6f6f6)
 }
 
 #mainContainer img {
@@ -11,6 +12,36 @@
 
 .myName {
     position: absolute;
-    top: 140px;
-    left: 600px;
+    top: 80px;
+    left: 900px;
+}
+
+h2 {
+    background-color: #ededed;
+    width: auto;
+    padding: 20px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+div {
+    border: 1px solid #ededed;
+    padding: 10px;
+    background-color: #fff;
+}
+
+a {
+    color: #6b82f2;
+}
+
+.myInfo {
+    border-radius: 10px;
+}
+
+#loom-companion-mv3 {
+    padding: 0px;
+}
+
+#info {
+    font-weight: bold;
 }

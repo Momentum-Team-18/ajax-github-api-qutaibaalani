@@ -34,10 +34,13 @@ fetch(url, {
         let userInfo = `
     <img src="${avatarUrl}" alt="Profile picture of qutaibaalani">
     <h1 class="myName">Qutaiba Al Ani</h1>
-    <p>Location: Raleigh, NC</p>
-    <p>Github URL: <a href="${githubUrl}">qutaibaalani</a></p>
-    <p>GitHub username: qutaibaalani</p>
+    <div class="myInfo">
+        <p><span id="info">Location:</span> Raleigh, NC</p>
+        <p><span id="info">GitHub URL:</span> <a href="${githubUrl}">qutaibaalani</a></p>
+        <p><span id="info">GitHub username:</span> qutaibaalani</p>
+    </div>
     `;
+
         // Add the user data to the DOM element with ID "mainContainer"
         mainContainer.innerHTML = userInfo;
 
@@ -63,10 +66,10 @@ fetch(url, {
         // Use the repositories returned from the API
         console.log("repos: ", repos);
         // Create a string containing HTML markup to display the user's repositories
-        let reposList = "<h2>GitHub Repos:</h2><ul>";
+        let reposList = "<h2>GitHub Repos:</h2>";
         for (let i = 0, len = repos.length; i < len; i++) {
             let repo = repos[i]; //index "i" in an array called "repos"
-            reposList += "<li><a href=\"" + repo.html_url + "\">" + repo.name + "</a></li>";
+            reposList += "<div>" + "📓 " + "<a href=\"" + repo.html_url + "\">" + repo.name + "</a></div>";
         }
         // Add the user's repositories to the DOM element with ID "mainContainer"
         mainContainer.innerHTML += reposList;
